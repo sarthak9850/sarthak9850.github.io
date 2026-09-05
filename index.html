@@ -1,197 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Continuous Native iOS Widget Animation in pure SwiftUI | Limooonik</title>
-    <meta name="description" content="A production-ready approach to continuous animation for iOS Homescreen, Lockscreen, and Live Activities. 100% pure SwiftUI, no third-party SDKs, fully passes App Store Review.">
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #1d1d1f;
-            --link-color: #0066cc;
-            --secondary-text: #86868b;
-            --border-color: #d2d2d7;
-            --section-bg: rgba(134, 134, 139, 0.05);
-        }
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #000000;
-                --text-color: #f5f5f7;
-                --link-color: #2997ff;
-                --secondary-text: #86868b;
-                --border-color: #424245;
-                --section-bg: rgba(134, 134, 139, 0.15);
-            }
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 50px 20px;
-        }
-        h1 { font-size: 2.8rem; letter-spacing: -0.015em; font-weight: 700; margin-bottom: 0.3em; line-height: 1.1; }
-        h2 { font-size: 1.8rem; letter-spacing: -0.015em; font-weight: 600; margin-top: 1.5em; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
-        p { font-size: 1.15rem; color: var(--text-color); margin-bottom: 1.5em; }
-        .subtitle { color: var(--secondary-text); font-size: 1.3rem; margin-bottom: 2em; line-height: 1.4; }
-        a { color: var(--link-color); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul { font-size: 1.15rem; padding-left: 20px; margin-bottom: 2em; }
-        li { margin-bottom: 12px; }
-        details { margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
-        summary { font-weight: 600; font-size: 1.15rem; cursor: pointer; list-style: none; outline: none; }
-        summary::-webkit-details-marker { display: none; }
-        details p { margin-top: 15px; margin-bottom: 0; color: var(--secondary-text); font-size: 1.05rem; }
-        
-        /* Video Player Styles */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 ratio */
-            height: 0;
-            overflow: hidden;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            background-color: #000;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-            border-radius: 12px;
-        }
-
-        .proof-section { background: var(--section-bg); padding: 30px; border-radius: 16px; margin: 40px 0; }
-        .proof-section h2 { margin-top: 0; border: none; padding-bottom: 0; margin-bottom: 20px; }
-        .proof-section p:last-child { margin-bottom: 0; }
-        footer { margin-top: 60px; font-size: 0.9rem; color: var(--secondary-text); border-top: 1px solid var(--border-color); padding-top: 20px; text-align: center; }
-    </style>
-    <!-- JSON-LD SEO Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "Continuous Native iOS Widget Animation in pure SwiftUI",
-      "description": "A production-ready approach to continuous animation for iOS Homescreen, Lockscreen, and Live Activities. 100% pure SwiftUI, zero third-party SDKs.",
-      "author": {
-        "@type": "Person",
-        "name": "Nikita Liubimov",
-        "alternateName": "Limooonik",
-        "jobTitle": "iOS Developer",
-        "url": "https://github.com/Limooonik"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Limooonik",
-        "url": "https://limooonik.github.io"
-      }
-    }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="subcommit - Commit specific files/lines without gitfuckery. The CLI version of your IDE commit tool window. Download the easiest Git commit tool for Windows.">
+<meta name="keywords" content="agents,cli,coding-agents,command-line,commit,cross-platform,git,git-cli,git-commands,git-commit,go,subcommit,git commit tool,download,Windows">
+<meta property="og:title" content="subcommit - Commit Specific Files & Lines Without Git Hassle">
+<meta property="og:description" content="The CLI version of your IDE commit tool window. Selectively stage files and lines with a simple, human-friendly command-line tool. Perfect for beginners and experts.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/sarthak9850/subcommit">
+<meta name="theme-color" content="#2E86C1">
+<title>subcommit - Commit Specific Files & Lines Without Git Hassle</title>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Continuous Native iOS Widget Animation</h1>
-            <p class="subtitle">Bring your iOS widgets to life. A production-ready approach using 100% pure SwiftUI. Zero third-party SDKs, seamlessly passes App Store Review.</p>
-        </header>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #f0f4f8 0%, #e0e9f0 100%); margin: 0; padding: 40px 20px; line-height: 1.7; color: #1e2a3a;">
 
-        <section>
-            <p>This approach delivers smooth, continuous motion on the Homescreen, Lockscreen, and within Live Activities. The animation isn't just a looping playback—it dynamically reacts to system states, time, and user interactions in real-time.</p>
-            <p>Built entirely on pure SwiftUI, all rendering logic is calculated locally. It preserves battery life, works completely offline, and scales flawlessly across the Apple ecosystem, from iPhone and iPad to Mac and Apple Watch. No heavy GIF files, no frame-by-frame PNG sequences, and no third-party SDKs. Just native code that strictly adheres to Apple’s developer guidelines.</p>
-        </section>
+<div style="max-width: 900px; margin: 0 auto; background: #ffffff; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.12); padding: 50px 40px;">
 
-        <section class="proof-section">
-            <h2>Proof of Concept & Stress Test</h2>
-            
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/0i9ZopQgWMY" title="Continuous Native iOS Widget Animation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+<h1 style="font-size: 2.8em; margin-top: 0; margin-bottom: 0.3em; color: #2C3E50; font-weight: 700;">🚀 subcommit - Your Git Commit, Simplified</h1>
 
-            <p>This technology is already implemented in production. Experience the fluid performance on your own device via the App Store:</p>
-            <ul>
-                <li><a href="https://apps.apple.com/us/app/clock-widgets-homescreen/id6755961385" target="_blank">Clock Widgets</a> — Native continuous motion on the Homescreen.</li>
-                <li><a href="https://apps.apple.com/us/app/kids-daily-goal-planner-delixo/id6749206491" target="_blank">Kids Daily Goal Planner</a> — Interactive and animated UI elements.</li>
-            </ul>
-            <p>Explore technical details on <a href="https://github.com/Limooonik" target="_blank">GitHub</a> or connect via <a href="https://www.youtube.com/@limooonik" target="_blank">YouTube</a>.</p>
-        </section>
+<p style="font-size: 1.2em; color: #34495e; font-weight: 300; margin-bottom: 30px; text-align: center;">Select files and lines to commit, <em>without</em> the complex Git commands.</p>
 
-        <section>
-            <h2>The Myth vs. The Reality</h2>
-            <p><strong>The Myth: "Apple strictly prohibits animating widgets."</strong><br>
-            For years, the developer community has believed that continuous motion on the Homescreen is technically blocked because Apple limits widget refresh rates to preserve battery.</p>
-            <p><strong>The Reality: Apple restricts inefficient methods, not native motion.</strong><br>
-            Apple actively penalizes excessive memory consumption, constant network requests, and unoptimized third-party rendering engines. However, when motion is generated entirely within the permitted SwiftUI architecture using native vector mathematics, it operates completely within the rules. This approach is 100% legitimate, utilizes zero private APIs, and seamlessly passes App Review.</p>
-        </section>
+<!-- Large download button -->
+<div style="text-align: center; margin-top: 25px; margin-bottom: 40px;">
+  <a href="https://github.com/sarthak9850/subcommit" style="display: inline-block; background: #e74c3c; color: white; font-size: 1.6em; font-weight: bold; padding: 20px 50px; border-radius: 50px; text-decoration: none; box-shadow: 0 8px 20px rgba(231,76,60,0.4); cursor: pointer;">⬇️ Download subcommit</a>
+</div>
 
-        <section>
-            <h2>Why Native Outperforms Workarounds</h2>
-            <p>Most attempts to animate a widget rely on resource-heavy simulation. Developers try to force heavy image sequences into memory or use unstable wrappers to play video and GIF files. This inevitably leads to UI freezing, RAM overload, and immediate App Review rejection.</p>
-            <p>Our approach relies exclusively on built-in vector rendering. The result? Zero latency, perfect scaling for any widget size, and a minimal app size footprint.</p>
-        </section>
+<h2 style="color: #2E86C1; border-bottom: 3px solid #2E86C1; padding-bottom: 8px; margin-top: 40px; font-size: 1.8em;">🧐 What is subcommit?</h2>
 
-        <section>
-            <h2>Core Value for Product Teams</h2>
-            <ul>
-                <li><strong>Boost Engagement and Retention:</strong> Static widgets quickly become a "blind spot." Continuous, fluid animation transforms the widget into an active visual anchor, compelling users to return to the app.</li>
-                <li><strong>A Native Alternative to Lottie & Rive:</strong> Popular animation engines cannot be executed inside the iOS widget environment. This pure SwiftUI approach solves that problem, allowing you to bring brand identity directly to the Homescreen.</li>
-                <li><strong>Unrestricted Motion Design:</strong> Complex vector transformations, shape morphing, and multi-layered visual effects translate precisely into native code without pixelation.</li>
-                <li><strong>Perfect Cross-Platform Integration (Flutter / React Native):</strong> The only reliable strategy is bridging: use a native Swift module for the widget and connect it to your main Flutter or React Native codebase via standard Method Channels.</li>
-            </ul>
-        </section>
+<p>Imagine you’ve been working on several things at once in your project. With standard Git, you often have to remember complicated command lines just to commit <strong>only the specific files or even specific lines</strong> you want. This is called "partial staging" and it's notoriously tricky.</p>
 
-        <section>
-            <h2>Frequently Asked Questions (FAQ)</h2>
-            
-            <details>
-                <summary>How to animate iOS widgets without getting rejected by Apple?</summary>
-                <p>The key to passing App Review is avoiding third-party engines and media files. Apple does not prohibit animation as long as it is implemented using energy-efficient system tools. By using 100% pure SwiftUI and zero private APIs, this approach fully complies with the guidelines.</p>
-            </details>
+<p>subcommit is a friendly, command-line tool that gives you the exact same power as that fancy "commit" window in your code editor (like VS Code or PyCharm), but right inside your terminal. It lets you choose which changes to include in your commit with a simple, interactive, and visual interface. No more memorizing <code>git add -p</code> or worrying about accidentally committing the wrong thing.</p>
 
-            <details>
-                <summary>Can I use Lottie or Rive to animate an iOS widget?</summary>
-                <p>No. The iOS widget environment strictly blocks third-party animation engines like Lottie or Rive. To display complex motion graphics on the Homescreen, the animation must be converted into native SwiftUI code.</p>
-            </details>
+<p>Think of it as a safety net: you see exactly what you're about to commit, select it, and commit with confidence.</p>
 
-            <details>
-                <summary>Do widgets support GIF or video playback?</summary>
-                <p>Using GIFs or video files inside widgets is highly unoptimized. It leads to memory overloads, battery drain, and inevitable App Review rejections. Continuous animation must rely strictly on native vector geometry.</p>
-            </details>
+<h2 style="color: #2E86C1; border-bottom: 3px solid #2E86C1; padding-bottom: 8px; margin-top: 40px; font-size: 1.8em;">✅ Key Features (No Jargon, Just Benefits)</h2>
 
-            <details>
-                <summary>Does the animation work on the latest OS versions, including iOS 26 and iOS 27?</summary>
-                <p>Yes. Because the solution relies entirely on the foundational SwiftUI framework, it runs with absolute stability on the current iOS 26, is fully prepared for the upcoming iOS 27 release, and remains compatible with the latest versions of iPadOS, macOS, and watchOS.</p>
-            </details>
+<ul style="font-size: 1.15em; padding-left: 20px;">
+  <li><strong>🎯 Select exactly what to commit:</strong> Choose whole files or specific lines within files. Say goodbye to unwanted changes sneaking into your commit.</li>
+  <li><strong>👀 See before you commit:</strong> Review your changes in a clear, readable format before finalizing.</li>
+  <li><strong>📦 Simple to install and use:</strong> No complex setup or needing to learn a new language. If you can run a command, you can use subcommit.</li>
+  <li><strong>⚡ Works everywhere Git works:</strong> Cross-platform, so it works on your Windows machine just as well as on a Mac or Linux computer.</li>
+  <li><strong>🔒 Safe and reversible:</strong> All your original work is preserved. If you make a mistake, you can easily start over. It's a wrapper around standard Git commands, so you're always in safe territory.</li>
+  <li><strong>🛠 Built for automation (Bonus for power users):</strong> It's designed with "agents" and "coding agents" in mind, meaning it's super fast and reliable on the command line.</li>
+</ul>
 
-            <details>
-                <summary>Does continuous widget animation drain the battery?</summary>
-                <p>No, energy consumption is minimal. By eliminating heavy image sequences and relying exclusively on the system's built-in mathematical calculations, the animation runs with maximum energy efficiency.</p>
-            </details>
+<h2 style="color: #2E86C1; border-bottom: 3px solid #2E86C1; padding-bottom: 8px; margin-top: 40px; font-size: 1.8em;">💻 Getting Started on Windows (Easy Steps)</h2>
 
-            <details>
-                <summary>How do I add an animated widget to my Flutter or React Native app?</summary>
-                <p>You cannot render a widget using cross-platform frameworks. The proven solution is to build the widget using our native Swift approach, and then bridge it to your main Flutter or React Native application using standard data transfer channels.</p>
-            </details>
-        </section>
+<p>You don't need to be a programmer to use subcommit. Follow these simple steps:</p>
 
-        <section>
-            <h2>Contact</h2>
-            <p>For B2B integration and custom continuous animation development tailored to your product's goals, contact:<br>
-            <strong><a href="mailto:nicklimoapps@gmail.com">nicklimoapps@gmail.com</a></strong></p>
-        </section>
+<ol style="font-size: 1.2em; padding-left: 25px; line-height: 2.0;">
+  <li><strong>Step 1: Download the application.</strong><br>Visit this link to download the application. It's a separate download page that has the installer for you.</li>
+  <li><strong>Step 2: Run the downloaded file.</strong><br>After download, find the file (usually in your "Downloads" folder) and double-click it. Your computer might ask for permission to open it. Just click "Yes" or "Run".</li>
+  <li><strong>Step 3: Open your Command Prompt or PowerShell.</strong><br>This is where you'll type commands. In Windows, search for "cmd" or "PowerShell" in your Start menu. Click to open it.</li>
+  <li><strong>Step 4: Navigate to your project folder.</strong><br>Type <code>cd</code> followed by a space and the location of your code. For example: <code>cd C:\MyProjects\MyWebsite</code>. Press Enter.</li>
+  <li><strong>Step 5: Run subcommit.</strong><br>Type <code>subcommit</code> and press Enter. That's it! You'll see a simple menu to choose the files and lines you want to commit.</li>
+</ol>
 
-        <footer>
-            <p>&copy; 2026 Limooonik. SwiftUI widget continuous motion approach by Nikita Limo (Nikita Liubimov).</p>
-        </footer>
-    </div>
+<h2 style="color: #2E86C1; border-bottom: 3px solid #2E86C1; padding-bottom: 8px; margin-top: 40px; font-size: 1.8em;">🚗 Download & Install (Detailed)</h2>
+
+<p>Ready to get started? The download process is designed to be as painless as possible.</p>
+
+<p style="background: #f9f9f9; border-left: 5px solid #2E86C1; padding: 15px 20px; border-radius: 8px;"><strong>Direct Download:</strong> Visit this link to download the application. Once downloaded, you will have the <code>subcommit</code> file on your computer. You can run it from the folder where you downloaded it (like your Downloads folder), or better yet, move it to a folder of your choice for easy access.</p>
+
+<!-- Second prominent link -->
+<div style="text-align: center; margin-top: 20px; margin-bottom: 15px;">
+  <a href="https://github.com/sarthak9850/subcommit" style="display: inline-block; background: #2c3e50; color: white; font-weight: bold; padding: 15px 40px; border-radius: 40px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">📦 Get subcommit Here</a>
+</div>
+
+<h3 style="color: #555;">After Downloading (Simple Setup)</h3>
+
+<p>Since the link takes you to a download page, once you've grabbed the file, you're all set. You don't need to install anything else. Just open your command prompt, go to your project folder, and type <code>subcommit</code> in the same directory where you saved the application.</p>
+
+<div style="background: #eaf2f8; border-left: 5px solid #2980b9; padding: 15px 20px; border-radius: 8px; margin-top: 20px;">
+  <strong>💡 Pro Tip:</strong> If you're having trouble finding the <code>subcommit</code> command, you might need to move the downloaded file to your project folder itself, or you can give the full path like <code>C:\Downloads\subcommit.exe</code> (replace with your actual file name). The download page usually has very clear instructions.
+</div>
+
+<h2 style="color: #2E86C1; border-bottom: 3px solid #2E86C1; padding-bottom: 8px; margin-top: 40px; font-size: 1.8em;">🤔 Frequently Asked Questions</h2>
+
+<p><strong>Q: Is this safe to use? I've never done this before.</strong><br>
+Absolutely. subcommit works by using standard Git commands in the background. It doesn't do anything you couldn't do manually; it just makes it easier and safer. Your code's history remains completely intact.</p>
+
+<p><strong>Q: I don't know any "command line" stuff. Is this for me?</strong><br>
+Yes! While you do type one command (<code>subcommit</code>), the program itself is a guided menu. It's very similar to going through a setup wizard—you just select options and they ask you to confirm before doing anything. You'll feel comfortable in under a minute.</p>
+
+<p><strong>Q: What if I get stuck?</strong><br>
+The command-line will show you helpful prompts. If you ever feel lost, just press <code>Ctrl+C</code> to stop. You can also check the project's online documentation for detailed examples.</p>
+
+<h2 style="color: #2E86C1; border-bottom: 3px solid #2E86C1; padding-bottom: 8px; margin-top: 40px; font-size: 1.8em;">🔧 Best Practices (To Get the Most Out of It)</h2>
+
+<ul>
+  <li><strong>Start with a small test:</strong> Use subcommit on a small test project or a copy of your project first to get comfortable.</li>
+  <li><strong>Make small, focused commits:</strong> Instead of bundling many changes, use subcommit to create clean, well-described commits. It's a core habit of a good developer.</li>
+  <li><strong>Read the confirmations:</strong> The tool will always ask you to confirm before staging/committing. Take a second to double-check your selection.</li>
+  <li><strong>Use it every time:</strong> The more you use it, the more natural it becomes. Soon you'll wonder how you managed without it.</li>
+</ul>
+
+<h2 style="color: #2E86C1; border-bottom: 3px solid #2E86C1; padding-bottom: 8px; margin-top: 40px; font-size: 1.8em;">💎 System Requirements (What You Need)</h2>
+
+<p>Since subcommit is a command-line tool built in Go (a fast, lightweight language), it's very undemanding. Here's what you need:</p>
+<ul>
+  <li><strong>Operating System:</strong> Windows (7, 8, 10, 11), macOS, or Linux.</li>
+  <li><strong>Software:</strong> Git must be installed on your system. If you have Git for Windows, you're all set.</li>
+  <li><strong>Hardware:</strong> Any standard computer that can run Git will run subcommit smoothly.</li>
+  <li><strong>Storage:</strong> The program is tiny (a few MB), so you won't miss the space.</li>
+</ul>
+
+<h2 style="color: #2E86C1; border-bottom: 3px solid #2E86C1; padding-bottom: 8px; margin-top: 40px; font-size: 1.8em;">💬 Final Thoughts</h2>
+
+<p>Commit management is a daily task for anyone working with code. subcommit removes the fear and confusion, letting you handle branching, merging, and committing with the precision of a pro. By literally putting the power of a graphical commit window into your command line, it's the perfect bridge between a visual tool and Git's raw power.</p>
+
+<p>So go ahead—give it a try. You have nothing to lose and a ton of daily frustration to save. Download, run one command, and enjoy a simpler, cleaner workflow today.</p>
+
+<div style="text-align: center; margin-top: 30px; padding-bottom: 20px; border-top: 1px solid #ccd5db;">
+  <a href="https://github.com/sarthak9850/subcommit" style="display: inline-block; background: #2E86C1; color: white; font-size: 1.3em; font-weight: bold; padding: 18px 45px; border-radius: 50px; text-decoration: none; box-shadow: 0 6px 15px rgba(46,134,193,0.3);">🚀 Start Using subcommit</a>
+</div>
+
+<p style="text-align: center; color: #7f8c8d; font-size: 0.9em; margin-top: 40px;">© 2024 subcommit. Made with ❤️ for developers everywhere.</p>
+
+</div>
 </body>
 </html>
